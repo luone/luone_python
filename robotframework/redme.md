@@ -1,0 +1,3 @@
+pip install robotframework
+pip install robotframework-ride
+robotframework
