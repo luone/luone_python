@@ -1,0 +1,27 @@
+标题: Chain-of-Thought Reasoning In The Wild Is Not Always Faithful
+作者: Iván Arcuschin, Jett Janiak, Robert Krzyzanowski, Senthooran Rajamanoharan, Neel Nanda, Arthur Conmy
+发布时间: 2025-03-11
+arXiv ID: 2503.08679v1
+PDF URL: http://arxiv.org/pdf/2503.08679v1
+摘要:
+Chain-of-Thought (CoT) reasoning has significantly advanced state-of-the-art
+AI capabilities. However, recent studies have shown that CoT reasoning is not
+always faithful, i.e. CoT reasoning does not always reflect how models arrive
+at conclusions. So far, most of these studies have focused on unfaithfulness in
+unnatural contexts where an explicit bias has been introduced. In contrast, we
+show that unfaithful CoT can occur on realistic prompts with no artificial
+bias. Our results reveal concerning rates of several forms of unfaithful
+reasoning in frontier models: Sonnet 3.7 (30.6%), DeepSeek R1 (15.8%) and
+ChatGPT-4o (12.6%) all answer a high proportion of question pairs unfaithfully.
+Specifically, we find that models rationalize their implicit biases in answers
+to binary questions ("implicit post-hoc rationalization"). For example, when
+separately presented with the questions "Is X bigger than Y?" and "Is Y bigger
+than X?", models sometimes produce superficially coherent arguments to justify
+answering Yes to both questions or No to both questions, despite such responses
+being logically contradictory. We also investigate restoration errors (Dziri et
+al., 2023), where models make and then silently correct errors in their
+reasoning, and unfaithful shortcuts, where models use clearly illogical
+reasoning to simplify solving problems in Putnam questions (a hard benchmark).
+Our findings raise challenges for AI safety work that relies on monitoring CoT
+to detect undesired behavior.
+分类: cs.AI, cs.CL, cs.LG

@@ -1,0 +1,23 @@
+标题: Coefficient-to-Basis Network: A Fine-Tunable Operator Learning Framework for Inverse Problems with Adaptive Discretizations and Theoretical Guarantees
+作者: Zecheng Zhang, Hao Liu, Wenjing Liao, Guang Lin
+发布时间: 2025-03-11
+arXiv ID: 2503.08642v1
+PDF URL: http://arxiv.org/pdf/2503.08642v1
+摘要:
+We propose a Coefficient-to-Basis Network (C2BNet), a novel framework for
+solving inverse problems within the operator learning paradigm. C2BNet
+efficiently adapts to different discretizations through fine-tuning, using a
+pre-trained model to significantly reduce computational cost while maintaining
+high accuracy. Unlike traditional approaches that require retraining from
+scratch for new discretizations, our method enables seamless adaptation without
+sacrificing predictive performance. Furthermore, we establish theoretical
+approximation and generalization error bounds for C2BNet by exploiting
+low-dimensional structures in the underlying datasets. Our analysis
+demonstrates that C2BNet adapts to low-dimensional structures without relying
+on explicit encoding mechanisms, highlighting its robustness and efficiency. To
+validate our theoretical findings, we conducted extensive numerical experiments
+that showcase the superior performance of C2BNet on several inverse problems.
+The results confirm that C2BNet effectively balances computational efficiency
+and accuracy, making it a promising tool to solve inverse problems in
+scientific computing and engineering applications.
+分类: cs.LG

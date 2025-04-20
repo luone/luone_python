@@ -1,0 +1,20 @@
+标题: Self-Taught Self-Correction for Small Language Models
+作者: Viktor Moskvoretskii, Chris Biemann, Irina Nikishina
+发布时间: 2025-03-11
+arXiv ID: 2503.08681v1
+PDF URL: http://arxiv.org/pdf/2503.08681v1
+摘要:
+Although large language models (LLMs) have achieved remarkable performance
+across various tasks, they remain prone to errors. A key challenge is enabling
+them to self-correct. While prior research has relied on external tools or
+large proprietary models, this work explores self-correction in small language
+models (SLMs) through iterative fine-tuning using solely self-generated data.
+We introduce the Self-Taught Self-Correction (STaSC) algorithm, which
+incorporates multiple algorithmic design choices. Experimental results on a
+question-answering task demonstrate that STaSC effectively learns
+self-correction, leading to significant performance improvements. Our analysis
+further provides insights into the mechanisms of self-correction and the impact
+of different design choices on learning dynamics and overall performance. To
+support future research, we release our user-friendly codebase and lightweight
+models.
+分类: cs.CL, cs.LG

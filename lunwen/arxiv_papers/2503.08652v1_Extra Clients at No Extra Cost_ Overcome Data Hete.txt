@@ -1,0 +1,23 @@
+标题: Extra Clients at No Extra Cost: Overcome Data Heterogeneity in Federated Learning with Filter Decomposition
+作者: Wei Chen, Qiang Qiu
+发布时间: 2025-03-11
+arXiv ID: 2503.08652v1
+PDF URL: http://arxiv.org/pdf/2503.08652v1
+摘要:
+Data heterogeneity is one of the major challenges in federated learning (FL),
+which results in substantial client variance and slow convergence. In this
+study, we propose a novel solution: decomposing a convolutional filter in FL
+into a linear combination of filter subspace elements, i.e., filter atoms. This
+simple technique transforms global filter aggregation in FL into aggregating
+filter atoms and their atom coefficients. The key advantage here involves
+mathematically generating numerous cross-terms by expanding the product of two
+weighted sums from filter atom and atom coefficient. These cross-terms
+effectively emulate many additional latent clients, significantly reducing
+model variance, which is validated by our theoretical analysis and empirical
+observation. Furthermore, our method permits different training schemes for
+filter atoms and atom coefficients for highly adaptive model personalization
+and communication efficiency. Empirical results on benchmark datasets
+demonstrate that our filter decomposition technique substantially improves the
+accuracy of FL methods, confirming its efficacy in addressing data
+heterogeneity.
+分类: cs.LG

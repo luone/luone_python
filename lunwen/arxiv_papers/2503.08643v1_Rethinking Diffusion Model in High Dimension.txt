@@ -1,0 +1,21 @@
+标题: Rethinking Diffusion Model in High Dimension
+作者: Zhenxin Zheng, Zhenjie Zheng
+发布时间: 2025-03-11
+arXiv ID: 2503.08643v1
+PDF URL: http://arxiv.org/pdf/2503.08643v1
+摘要:
+Curse of Dimensionality is an unavoidable challenge in statistical
+probability models, yet diffusion models seem to overcome this limitation,
+achieving impressive results in high-dimensional data generation. Diffusion
+models assume that they can learn the statistical properties of the underlying
+probability distribution, enabling sampling from this distribution to generate
+realistic samples. But is this really how they work? To address this question,
+this paper conducts a detailed analysis of the objective function and inference
+methods of diffusion models, leading to several important conclusions that help
+answer the above question: 1) In high-dimensional sparse scenarios, the target
+of the objective function fitting degrades from a weighted sum of multiple
+samples to a single sample. 2) The mainstream inference methods can all be
+represented within a simple unified framework, without requiring statistical
+concepts such as Markov chains and SDEs. 3) Guided by this simple framework,
+more efficient inference methods can be discovered.
+分类: stat.ML, cs.AI, cs.CV, cs.LG

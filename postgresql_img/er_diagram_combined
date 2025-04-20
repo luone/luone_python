@@ -1,0 +1,602 @@
+// ER Diagram
+digraph {
+	rankdir=TB
+	splines=ortho
+	overlap=false
+	nodesep=0.5
+	ranksep=1.0
+	subgraph cluster_testserver {
+		color=blue label=testserver style=dashed
+	}
+	subgraph cluster_platform {
+		color=blue label=platform style=dashed
+		platform_component_config [label="platform_component_config
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		platform_version_config [label="platform_version_config
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_ai {
+		color=blue label=ai style=dashed
+		ai_token_config [label="ai_token_config
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		ai_case_design_data_record [label="ai_case_design_data_record
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		ai_requirement_generate_record [label="ai_requirement_generate_record
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		ai_case_generate_record [label="ai_case_generate_record
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		ai_knowledge_generate_record [label="ai_knowledge_generate_record
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		ai_generate_statistics [label="ai_generate_statistics
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		ai_requirement_data_record [label="ai_requirement_data_record
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_auto {
+		color=blue label=auto style=dashed
+		auto_exec_configure [label="auto_exec_configure
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		auto_exec_info [label="auto_exec_info
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_case {
+		color=blue label=case style=dashed
+		case_metrics_report [label="case_metrics_report
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_cockpit {
+		color=blue label=cockpit style=dashed
+		cockpit_common_function [label="cockpit_common_function
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_cr {
+		color=blue label=cr style=dashed
+		cr_actual_release_manage_time [label="cr_actual_release_manage_time
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		cr_metrics_report [label="cr_metrics_report
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		cr_file [label="cr_file
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_custom {
+		color=blue label=custom style=dashed
+		custom_report_field_relation [label="custom_report_field_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		custom_report_template [label="custom_report_template
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_evaluation {
+		color=blue label=evaluation style=dashed
+		evaluation_checks [label="evaluation_checks
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		evaluation_issue [label="evaluation_issue
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		evaluation_plan [label="evaluation_plan
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		evaluation_plan_cr [label="evaluation_plan_cr
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		evaluation_report [label="evaluation_report
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		evaluation_report_plan [label="evaluation_report_plan
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		evaluation_task [label="evaluation_task
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		evaluation_task_cr [label="evaluation_task_cr
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_event {
+		color=blue label=event style=dashed
+		event_case_relation [label="event_case_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		event_issue_relation [label="event_issue_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		event_risk_relation [label="event_risk_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_group {
+		color=blue label=group style=dashed
+		group_metrics_report [label="group_metrics_report
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_import {
+		color=blue label=import style=dashed
+		import_user_role_test [label="import_user_role_test
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_issue {
+		color=blue label=issue style=dashed
+		issue_delete_info [label="issue_delete_info
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		issue_metrics_report [label="issue_metrics_report
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_library {
+		color=blue label=library style=dashed
+		library_risk_case_relation [label="library_risk_case_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_month {
+		color=blue label=month style=dashed
+		month_test_metrics [label="month_test_metrics
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_non {
+		color=blue label=non style=dashed
+		non_funcation_system_stratum [label="non_funcation_system_stratum
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		non_functional_config [label="non_functional_config
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		non_functional_project [label="non_functional_project
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		non_functional_rating_relation [label="non_functional_rating_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		non_functional_result [label="non_functional_result
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		non_functional_stageversion [label="non_functional_stageversion
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		non_functional_synchro [label="non_functional_synchro
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		non_functional_system_reta [label="non_functional_system_reta
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		non_functional_test_task [label="non_functional_test_task
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_production {
+		color=blue label=production style=dashed
+		production_event_detail [label="production_event_detail
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		production_event [label="production_event
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_question {
+		color=blue label=question style=dashed
+		question_case_relation [label="question_case_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		question_risk_relation [label="question_risk_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_pg {
+		color=blue label=pg style=dashed
+	}
+	subgraph cluster_report {
+		color=blue label=report style=dashed
+		report_info [label="report_info
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		report_other [label="report_other
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		report_user_relation [label="report_user_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_review {
+		color=blue label=review style=dashed
+		review_case_relation [label="review_case_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		review_config [label="review_config
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		review_info [label="review_info
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		review_report_relation [label="review_report_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		review_user_relation [label="review_user_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_risk {
+		color=blue label=risk style=dashed
+		risk_case_relation [label="risk_case_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		risk_factor_config [label="risk_factor_config
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		risk_issue_relation [label="risk_issue_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		risk_level_config [label="risk_level_config
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_status {
+		color=blue label=status style=dashed
+		status_transfer [label="status_transfer
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		status_transfer_display_fields [label="status_transfer_display_fields
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		status_transfer_fields [label="status_transfer_fields
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_story {
+		color=blue label=story style=dashed
+		story_cr_allplan [label="story_cr_allplan
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		story_cr_evaluation_issue [label="story_cr_evaluation_issue
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		story_cr_follow [label="story_cr_follow
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		story_cr_interface [label="story_cr_interface
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		story_cr_key_project_config [label="story_cr_key_project_config
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		story_cr_manage_process [label="story_cr_manage_process
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		story_cr_milepost [label="story_cr_milepost
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		story_cr_mind [label="story_cr_mind
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		story_cr_stage [label="story_cr_stage
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		story_cr_stage_activity [label="story_cr_stage_activity
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		story_cr_system_relation [label="story_cr_system_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		story_cr_requirement [label="story_cr_requirement
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		story_cr_system_relation_2 [label="story_cr_system_relation_2
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		story_cr_risk_statistics_report [label="story_cr_risk_statistics_report
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		story_cr [label="story_cr
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_sys {
+		color=blue label=sys style=dashed
+		sys_calendar [label="sys_calendar
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_checks_config [label="sys_checks_config
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_dept [label="sys_dept
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_dept_relation [label="sys_dept_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_dict [label="sys_dict
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_dict_item [label="sys_dict_item
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_download [label="sys_download
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_enterprise [label="sys_enterprise
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_file [label="sys_file
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_homepage_notice_config [label="sys_homepage_notice_config
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_log [label="sys_log
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_menu [label="sys_menu
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_menu_old [label="sys_menu_old
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_message [label="sys_message
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_message_item [label="sys_message_item
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_message_notice [label="sys_message_notice
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_message_remind [label="sys_message_remind
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_module [label="sys_module
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_module_0905 [label="sys_module_0905
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_module_0908 [label="sys_module_0908
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_notice [label="sys_notice
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_oauth_client_details [label="sys_oauth_client_details
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_post [label="sys_post
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_process [label="sys_process
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_process_stage [label="sys_process_stage
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_process_stage_activity [label="sys_process_stage_activity
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_project [label="sys_project
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_prompt_relation [label="sys_prompt_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_public_param [label="sys_public_param
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_prompt [label="sys_prompt
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_role_menu_relation_in_project [label="sys_role_menu_relation_in_project
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_stage_key_project [label="sys_stage_key_project
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_stageversion [label="sys_stageversion
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_stageversion_config [label="sys_stageversion_config
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_track_action [label="sys_track_action
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_track_remark [label="sys_track_remark
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_user [label="sys_user
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_user_enterprise_relation [label="sys_user_enterprise_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_user_group [label="sys_user_group
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_user_group_relation [label="sys_user_group_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_user_post [label="sys_user_post
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_user_project_relation [label="sys_user_project_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_system_under_test [label="sys_system_under_test
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_user_role_relation [label="sys_user_role_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_user_role_relation_copy [label="sys_user_role_relation_copy
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_user_sut_relation [label="sys_user_sut_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_version_merged_issue [label="sys_version_merged_issue
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_workload_config [label="sys_workload_config
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_role [label="sys_role
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		sys_role_menu_relation [label="sys_role_menu_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_test {
+		color=blue label=test style=dashed
+		test_auto_summary_statistics_report [label="test_auto_summary_statistics_report
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		test_auto_back_task_statistics_report [label="test_auto_back_task_statistics_report
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		test_auto_cr_statistics_report [label="test_auto_cr_statistics_report
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		test_case [label="test_case
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		test_case_check_record [label="test_case_check_record
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		test_case_check_result [label="test_case_check_result
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		test_case_dir [label="test_case_dir
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		test_case_issue [label="test_case_issue
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		test_dir [label="test_dir
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		test_library [label="test_library
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		test_library_dir [label="test_library_dir
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		test_risk_expert [label="test_risk_expert
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		test_system_module_info [label="test_system_module_info
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		test_task_case_relation [label="test_task_case_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		test_task_dir_relation [label="test_task_dir_relation
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		test_task_exec_info [label="test_task_exec_info
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		test_task [label="test_task
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		test_auto_cr_user_statistics_report [label="test_auto_cr_user_statistics_report
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		test_auto_back_task_user_statistics_report [label="test_auto_back_task_user_statistics_report
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		test_auto_inspect_statistics_report [label="test_auto_inspect_statistics_report
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_user {
+		color=blue label=user style=dashed
+	}
+	subgraph cluster_system {
+		color=blue label=system style=dashed
+		system_metrics_report [label="system_metrics_report
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		system_relation_maintenance [label="system_relation_maintenance
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_task {
+		color=blue label=task style=dashed
+		task_metrics_report [label="task_metrics_report
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_idx {
+		color=blue label=idx style=dashed
+	}
+	subgraph cluster_version {
+		color=blue label=version style=dashed
+		version_change_basis [label="version_change_basis
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		version_change_basis_config [label="version_change_basis_config
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_workitem {
+		color=blue label=workitem style=dashed
+		workitem_field [label="workitem_field
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		workitem_field_list_config [label="workitem_field_list_config
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		workitem_field_option [label="workitem_field_option
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		workitem_field_search_config [label="workitem_field_search_config
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		workitem_field_template [label="workitem_field_template
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		workitem_status [label="workitem_status
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		workitem_template [label="workitem_template
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		workitem_template_status [label="workitem_template_status
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+		workitem_template_type [label="workitem_template_type
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_external {
+		color=blue label=external style=dashed
+		external_tool_config [label="external_tool_config
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+	subgraph cluster_outside {
+		color=blue label=outside style=dashed
+		outside_tool_data_num [label="outside_tool_data_num
+(No primary key)
+..." fontsize=10 height=0.5 shape=box width=1.5]
+	}
+}

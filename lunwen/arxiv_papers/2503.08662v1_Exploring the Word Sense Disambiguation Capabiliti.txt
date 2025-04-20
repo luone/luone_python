@@ -1,0 +1,19 @@
+标题: Exploring the Word Sense Disambiguation Capabilities of Large Language Models
+作者: Pierpaolo Basile, Lucia Siciliani, Elio Musacchio, Giovanni Semeraro
+发布时间: 2025-03-11
+arXiv ID: 2503.08662v1
+PDF URL: http://arxiv.org/pdf/2503.08662v1
+摘要:
+Word Sense Disambiguation (WSD) is a historical task in computational
+linguistics that has received much attention over the years. However, with the
+advent of Large Language Models (LLMs), interest in this task (in its classical
+definition) has decreased. In this study, we evaluate the performance of
+various LLMs on the WSD task. We extend a previous benchmark (XL-WSD) to
+re-design two subtasks suitable for LLM: 1) given a word in a sentence, the LLM
+must generate the correct definition; 2) given a word in a sentence and a set
+of predefined meanings, the LLM must select the correct one. The extended
+benchmark is built using the XL-WSD and BabelNet. The results indicate that
+LLMs perform well in zero-shot learning but cannot surpass current
+state-of-the-art methods. However, a fine-tuned model with a medium number of
+parameters outperforms all other models, including the state-of-the-art.
+分类: cs.CL, cs.AI

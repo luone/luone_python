@@ -1,0 +1,24 @@
+标题: REGEN: Learning Compact Video Embedding with (Re-)Generative Decoder
+作者: Yitian Zhang, Long Mai, Aniruddha Mahapatra, David Bourgin, Yicong Hong, Jonah Casebeer, Feng Liu, Yun Fu
+发布时间: 2025-03-11
+arXiv ID: 2503.08665v1
+PDF URL: http://arxiv.org/pdf/2503.08665v1
+摘要:
+We present a novel perspective on learning video embedders for generative
+modeling: rather than requiring an exact reproduction of an input video, an
+effective embedder should focus on synthesizing visually plausible
+reconstructions. This relaxed criterion enables substantial improvements in
+compression ratios without compromising the quality of downstream generative
+models. Specifically, we propose replacing the conventional encoder-decoder
+video embedder with an encoder-generator framework that employs a diffusion
+transformer (DiT) to synthesize missing details from a compact latent space.
+Therein, we develop a dedicated latent conditioning module to condition the DiT
+decoder on the encoded video latent embedding. Our experiments demonstrate that
+our approach enables superior encoding-decoding performance compared to
+state-of-the-art methods, particularly as the compression ratio increases. To
+demonstrate the efficacy of our approach, we report results from our video
+embedders achieving a temporal compression ratio of up to 32x (8x higher than
+leading video embedders) and validate the robustness of this ultra-compact
+latent space for text-to-video generation, providing a significant efficiency
+boost in latent diffusion model training and inference.
+分类: cs.CV, cs.AI, cs.LG

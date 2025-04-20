@@ -1,0 +1,19 @@
+标题: Efficient Many-Shot In-Context Learning with Dynamic Block-Sparse Attention
+作者: Emily Xiao, Chin-Jou Li, Yilin Zhang, Graham Neubig, Amanda Bertsch
+发布时间: 2025-03-11
+arXiv ID: 2503.08640v1
+PDF URL: http://arxiv.org/pdf/2503.08640v1
+摘要:
+Many-shot in-context learning has recently shown promise as an alternative to
+finetuning, with the major advantage that the same model can be served for
+multiple tasks. However, this shifts the computational burden from
+training-time to inference-time, making deployment of many-shot ICL challenging
+to justify in-practice. This cost is further increased if a custom
+demonstration set is retrieved for each inference example. We present Dynamic
+Block-Sparse Attention, a training-free framework for retrieval-based many-shot
+in-context learning. By combining carefully designed block-sparse attention and
+retrieval of cached groups of demonstrations, we achieve comparable per-example
+latency to finetuning while maintaining on average >95% of the best method's
+accuracy across strong ICL and finetuning baselines. We hope that this will
+further enable the deployment of many-shot ICL at scale.
+分类: cs.CL
