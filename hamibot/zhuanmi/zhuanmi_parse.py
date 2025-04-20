@@ -5,8 +5,6 @@ import urllib.request
 from datetime import datetime
 import base64
 
-import jsbeautifier
-
 
 def split_functions_from_file(filename):
     # 读取文件内容
@@ -56,6 +54,9 @@ def buildNew_1():
 def download():
     global url, file, file_path
     url = 'https://gitee.com/api/v5/repos/xiaotoumingzzz/hamibot-script/contents/hamibot_ui_pro.js?access_token=3ec2d75e823866d3cf42df7369dd5879&ref=online'
+    #url = 'https://gitee.com/api/v5/repos/lu_one/autojs-script/contents/xinmeng_ui_autojsx.js?access_token=1d4f6ac4b8dd3cbfa43cb4407eb968e0&ref=online'
+    # 'https://gitee.com/api/v5/users/xiaotoumingzzz/repos?access_token=3ec2d75e823866d3cf42df7369dd5879'
+    # 'https://gitee.com/api/v5/users/lu_one/repos?access_token=1d4f6ac4b8dd3cbfa43cb4407eb968e0'
     # autoxjs
     #url = 'https://gitee.com/api/v5/repos/xiaotoumingzzz/hamibot-script/contents/autoxjs.js?access_token=3ec2d75e823866d3cf42df7369dd5879&ref=online'
     current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
@@ -63,11 +64,11 @@ def download():
     # file_name = "2024-07-04_15.json"
     # 下载文件
     urllib.request.urlretrieve(url, file_name)
-    with open(file_name, "r") as file:
+    with open(file_name, "r",encoding='utf-8') as file:
         json_data = json.load(file)
         decoded_data = base64.b64decode(json_data['content'])
         # 设置格式化选项
-        # decoded_data = decoded_data.decode('utf-8')
+        decoded_data = decoded_data.decode('utf-8')
         # options = jsbeautifier.BeautifierOptions()
         # options.indent_size = 4  # 设置缩进大小
         # options.indent_with_tabs = False  # 使用空格而不是制表符
@@ -75,8 +76,8 @@ def download():
         # 格式化代码
         # formatted_code = jsbeautifier.beautify(decoded_data, options)
         # file_path = "2024-07-04_15.js"
-        with open(file_name, "w") as jsFile:
-            jsFile.write(decoded_data.decode('utf-8'))
+        with open(file_name, "w",encoding='utf-8') as jsFile:
+            jsFile.write(decoded_data)
 
 
 if __name__ == '__main__':

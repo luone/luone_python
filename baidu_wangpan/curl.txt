@@ -1,0 +1,123 @@
+# 列出指定目录的数据
+curl 'https://pan.baidu.com/api/list?clienttype=0&app_id=250528&web=1&dp-logid=59028700902720880070&order=time&desc=1&dir=%2F%E6%88%91%E7%9A%84%E8%B5%84%E6%BA%90%2F20250404006-%E8%B5%B5%E6%99%93%E8%B7%AF4(1).5%2F%E5%85%A8%E9%83%A8%E5%BA%95%E7%89%87&num=100&page=2' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Accept-Language: zh-CN,zh;q=0.9' \
+  -H 'Connection: keep-alive' \
+  -b 'BIDUPSID=7263DD0A66CF2A25195A2AEEC40958B5; PSTM=1731895720; BAIDUID=5CEBF22A9BA772FD3B62445193CBD5EE:SL=0:NR=10:FG=1; BAIDUID_BFESS=5CEBF22A9BA772FD3B62445193CBD5EE:SL=0:NR=10:FG=1; PANWEB=1; MCITY=-131%3A; ZFY=Cmr1V:BtJZv:AHpDn69LB0jU20bxF3ZJzUweX6jDUFshY:C; PSINO=1; delPer=0; H_WISE_SIDS=60277_61027_61668_62325_62336_62484_62862_62881_62892_62909_62918_62926_62922_62969_62980; csrfToken=FQvcHI1oNdQuDlD8vN3TS1kG; BDCLND=PatJbJNk2ohXUa11PNXqjzbnZv7qoxWgyCBl53f3V3Q%3D; H_PS_PSSID=60277_61027_61668_62325_62336_62484_62862_62881_62892_62909_62918_62926_62922_62969_62980_63018; BA_HECTOR=2kak81a1000k0104212h0k202lica71k06pas22; ppfuid=FOCoIC3q5fKa8fgJnwzbE0LGziLN3VHbX8wfShDP6RCsfXQp/69CStRUAcn/QmhIlFDxPrAc/s5tJmCocrihdwitHd04Lvs3Nfz26Zt2holplnIKVacidp8Sue4dMTyfg65BJnOFhn1HthtSiwtygiD7piS4vjG/W9dLb1VAdqNvjLowygVbK9xeY8tvcT1iO0V6uxgO+hV7+7wZFfXG0MSpuMmh7GsZ4C7fF/kTgmuSl/cvKeI8iFojVmpCSZIOQWHcgOTFtj2iFZEfLzQuHAryawfUMAYBdEdQcTqAopI1v2iwj13daM+9aWJ5GJCQu/SUbF5jV5AUyz/jBiIgKVObaDCHgWJZH3ZrTGYHmi7XJB9z3y2o8Kqxep5XBCsu9T7kB7PjMcMtI00HuRpKlnrzoVy1GoWNOpkE9RTIMk8CfdmhxR0fyy9voHR0WBJdnvNXIEW2pwj4BXINSNFrPG7RuJdGqtujDdyt/QfvZygFMb7+JFWxNGoA0JNiv6hCb0gkXpkEpISi6tVHh+hsQifjACGGz0MbLI9AAutvQNmLovQE8DrrUkOPSWZkiBwIUvxonSGS2lgiNZBxgK/Nad6P3sfvyvYhyXNwxm6SzH+Oja1l6cy9uoP7y446ILa1CLEOaV1jDkGoksNhRtn7B1VPovN1TRU04qLrmECuDGMBVR4vlhy8DqZQ1/LUEQ9mjyqP/SnZsRdyLAjuA3ESTcrCSmS6iWcmxBDT8gjuTbf5rG4+h0gsZ2eMGgzIHtuS63IIYbLzQr/C82P9eP5mk0UGJhEbJZ5VFELwdB1Zqsw7E1P/UFtgEbnGJS8xk8zf8YClTpPkuiWM0gZm41VCO+dj8pAfyVHqnsedsJI6TBGH4FEgozZBVnNPfwZCiunebE0X1izHosE1Jw73cEkMH/+rcAUu2n5CREV98SkmXm9t0o6FxUulvcKib1eV1Q5XHcDRvDnFVc7QwGQcn2f8yY5wb2pHyEgg2wrfB6CXhXr6cdu72/IBohb5iIJuK4OQxFEvozgHKDtTDKxnqr+9qBjv5ii+uLg9FdQTz76laHhgWa2XYnL0I/yMaYOB1fXv8cSTQyUvg5bG6rt5+COubpDRly8hJJQuMhC7lnfy1nB/byDVtojV8VzprVRC2O+E8cSTQyUvg5bG6rt5+COubomTY4K0wDrt8OFFV508V7i9BTP7hct8v25t214g385XJlf9dI0aUTGtVnNNQzVUXZbqyhFnB/aNBvyoMXs7d3ed0sIeyq9R1gs4TMyBREN1+COzqWiD/J/i86HI7d4aVw==; Hm_lvt_7a3960b6f067eb0085b7f96ff5e660b0=1745053477; HMACCOUNT=772393591CE09A7D; Hm_lvt_182d6d59474cf78db37e0b2248640ea5=1745053495; BDUSS=nMzQn50T1M5SzJrNnYyflpCM0lkc2kxQ01GfkVkRzRzLWdITngxQVV1dTZIU3RvRVFBQUFBJCQAAAAAAAAAAAEAAAA818c4bHVfb25lXwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALqQA2i6kANoe; STOKEN=a34466ded40f3e1dc2d8e99178b63802607a430cb517309266f03f244e296c82; BDUSS_BFESS=nMzQn50T1M5SzJrNnYyflpCM0lkc2kxQ01GfkVkRzRzLWdITngxQVV1dTZIU3RvRVFBQUFBJCQAAAAAAAAAAAEAAAA818c4bHVfb25lXwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALqQA2i6kANoe; __bid_n=19352fd4f470144254dc0e; Hm_lvt_d5bdc9eee733100f7b952fc44f7e53e4=1745072393; Hm_lpvt_d5bdc9eee733100f7b952fc44f7e53e4=1745073028; Hm_lpvt_7a3960b6f067eb0085b7f96ff5e660b0=1745073719; newlogin=1; PANPSC=2731669165473920844%3AAuI6D6iGxsvAzjfr83OmM1cS2d9ns3O51%2BDh3FHgEfKMlYyryDI8oipPymoB8yIZOD8tuTtuXwJrNmFDBosdkKBa6u%2FIOLHTQjQ1mFHTd8V1tt%2Bk9Cane%2BomA%2FKeZTApdS8c7ndIzLGcCNpWJnWVTjB9EpYb0FOrEbLg5Tzzs5HGdAKH9wtEFl9l5VLCkYtGkty6noED74XrbkBUnMiFfw%3D%3D; AB_EXPERIMENT=%7B%22PC_SESSION_COOKIE_SWITCH%22%3A%22ON%22%2C%22group_cloud_smallflow%22%3A%22%22%2C%22ORDER_SIX_MONTH_CHECK%22%3A%22ON%22%2C%22group_smallflow%22%3A%22%22%2C%22CHROME80_SET_COOKIE%22%3A%22ON%22%2C%22group_smallflow_uri%22%3A%22%22%2C%22rccGetChannelInfoSink%22%3A%22ON%22%7D; ndut_fmt=DB7C97BCA1C624217F25882E01CB69C0D7C9220220806917C08FB7F894C18308; Hm_lpvt_182d6d59474cf78db37e0b2248640ea5=1745074179; ab_sr=1.0.1_ZTA4ZTUyM2Q1MjE3ZjZmNWI3M2RjMzU2NzI0NmMxMjBkNmQ3OTNhZGQzMWNkMWEwZmU3NDJlNzYyOTJjZjI2NGVhOTA0NDA3OTY3YzQ0MDQ1NmZlZDcxZjM2MjVkNmRjZmQ5Y2M4MGZjYzI0ZWFjNDI0MzhkMmQyZjdkYWQ3NGZiNjY1ZTUxY2I1Y2I4ODQwNDI2ZjkzNmY0Y2MwNzIxNzM3NmEyMzhkYTExN2U2OTdhM2RlZGI5NDM4MWM1ODFi' \
+  -H 'Referer: https://pan.baidu.com/disk/main' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-origin' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36' \
+  -H 'X-Requested-With: XMLHttpRequest' \
+  -H 'sec-ch-ua: "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"'
+# 响应
+{"errno":0,"guid_info":"","list":[{"tkbind_id":0,"server_mtime":1745074298,"category":4,"unlist":0,"isdir":0,"oper_id":3611062808,"wpfile":0,"local_mtime":1743906330,"share":0,"pl":2,"local_ctime":1743829690,"is_scene":0,"extent_int2":0,"thumbs":{"url3":"https:\/\/thumbnail0.baidupcs.com\/thumbnail\/aacddf76fgaecad10d5ae103c9ddeb3e?fid=3611062808-250528-552648500637155&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-HDXpg1hilpylJtEg6Z8v1wfo4k8%3d&expires=8h&chkbd=0&chkv=0&dp-logid=221125570845238773&dp-callid=0&time=1745071200&size=c850_u580&quality=100","url2":"https:\/\/thumbnail0.baidupcs.com\/thumbnail\/aacddf76fgaecad10d5ae103c9ddeb3e?fid=3611062808-250528-552648500637155&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-HDXpg1hilpylJtEg6Z8v1wfo4k8%3d&expires=8h&chkbd=0&chkv=0&dp-logid=221125570845238773&dp-callid=0&time=1745071200&size=c360_u270&quality=100","url1":"https:\/\/thumbnail0.baidupcs.com\/thumbnail\/aacddf76fgaecad10d5ae103c9ddeb3e?fid=3611062808-250528-552648500637155&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-HDXpg1hilpylJtEg6Z8v1wfo4k8%3d&expires=8h&chkbd=0&chkv=0&dp-logid=221125570845238773&dp-callid=0&time=1745071200&size=c140_u90&quality=100"},"server_ctime":1745033920,"extent_int8":0,"owner_id":1031922648,"lodocpreview":"https:\/\/pcsdata.baidu.com\/doc\/aacddf76fgaecad10d5ae103c9ddeb3e?fid=3611062808-250528-552648500637155&time=1745074492&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-I8fJCYzac5kRZlrrKWYL9R57uJo%3d&expires=8h&chkbd=0&chkv=0&dp-logid=221125570845238773&dp-callid=0&type=pdf&from=lo","docpreview":"https:\/\/pcsdata.baidu.com\/doc\/aacddf76fgaecad10d5ae103c9ddeb3e?fid=3611062808-250528-552648500637155&time=1745074492&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-I8fJCYzac5kRZlrrKWYL9R57uJo%3d&expires=8h&chkbd=0&chkv=0&dp-logid=221125570845238773&dp-callid=0","size":8220102,"extent_tinyint7":0,"fs_id":552648500637155,"path":"\/\u6211\u7684\u8d44\u6e90\/20250404006-\u8d75\u6653\u8def4(1).5\/\u5168\u90e8\u5e95\u7247\/602A2185.JPG.txt","owner_type":1,"from_type":0,"real_category":"jpg","md5":"aacddf76fgaecad10d5ae103c9ddeb3e","server_atime":0,"server_filename":"602A2185.JPG.txt"},{"tkbind_id":0,"server_mtime":1745074074,"category":4,"unlist":0,"isdir":0,"oper_id":3611062808,"wpfile":0,"local_mtime":1743859947,"share":0,"pl":2,"local_ctime":1743829813,"is_scene":0,"extent_int2":0,"thumbs":{"url3":"https:\/\/thumbnail0.baidupcs.com\/thumbnail\/3bb1482e1td7dca782449faccc6ba174?fid=3611062808-250528-356912283587529&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-kHIIcEx1PjyFjLQWpjEWvVNdQxI%3d&expires=8h&chkbd=0&chkv=0&dp-logid=221125570845238773&dp-callid=0&time=1745071200&size=c850_u580&quality=100","url2":"https:\/\/thumbnail0.baidupcs.com\/thumbnail\/3bb1482e1td7dca782449faccc6ba174?fid=3611062808-250528-356912283587529&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-kHIIcEx1PjyFjLQWpjEWvVNdQxI%3d&expires=8h&chkbd=0&chkv=0&dp-logid=221125570845238773&dp-callid=0&time=1745071200&size=c360_u270&quality=100","url1":"https:\/\/thumbnail0.baidupcs.com\/thumbnail\/3bb1482e1td7dca782449faccc6ba174?fid=3611062808-250528-356912283587529&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-kHIIcEx1PjyFjLQWpjEWvVNdQxI%3d&expires=8h&chkbd=0&chkv=0&dp-logid=221125570845238773&dp-callid=0&time=1745071200&size=c140_u90&quality=100"},"server_ctime":1745034122,"extent_int8":0,"owner_id":1031922648,"lodocpreview":"https:\/\/pcsdata.baidu.com\/doc\/3bb1482e1td7dca782449faccc6ba174?fid=3611062808-250528-356912283587529&time=1745074492&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-vvNu1TRkRdoBUv7bAAJ6gpfopeE%3d&expires=8h&chkbd=0&chkv=0&dp-logid=221125570845238773&dp-callid=0&type=pdf&from=lo","docpreview":"https:\/\/pcsdata.baidu.com\/doc\/3bb1482e1td7dca782449faccc6ba174?fid=3611062808-250528-356912283587529&time=1745074492&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-vvNu1TRkRdoBUv7bAAJ6gpfopeE%3d&expires=8h&chkbd=0&chkv=0&dp-logid=221125570845238773&dp-callid=0","size":11753508,"extent_tinyint7":0,"fs_id":356912283587529,"path":"\/\u6211\u7684\u8d44\u6e90\/20250404006-\u8d75\u6653\u8def4(1).5\/\u5168\u90e8\u5e95\u7247\/602A2564.JPG.txt","owner_type":1,"from_type":0,"real_category":"jpg","md5":"3bb1482e1td7dca782449faccc6ba174","server_atime":0,"server_filename":"602A2564.JPG.txt"}],"request_id":221125570845238773,"guid":0}
+
+# 重命名接口
+curl 'https://pan.baidu.com/api/filemanager?async=2&onnest=fail&opera=rename&bdstoken=7eeeb94f50229f7814a52f0e54f54bf7&clienttype=0&app_id=250528&web=1&dp-logid=59028700902720880082' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Accept-Language: zh-CN,zh;q=0.9' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -b 'BIDUPSID=7263DD0A66CF2A25195A2AEEC40958B5; PSTM=1731895720; BAIDUID=5CEBF22A9BA772FD3B62445193CBD5EE:SL=0:NR=10:FG=1; BAIDUID_BFESS=5CEBF22A9BA772FD3B62445193CBD5EE:SL=0:NR=10:FG=1; PANWEB=1; MCITY=-131%3A; ZFY=Cmr1V:BtJZv:AHpDn69LB0jU20bxF3ZJzUweX6jDUFshY:C; PSINO=1; delPer=0; H_WISE_SIDS=60277_61027_61668_62325_62336_62484_62862_62881_62892_62909_62918_62926_62922_62969_62980; csrfToken=FQvcHI1oNdQuDlD8vN3TS1kG; BDCLND=PatJbJNk2ohXUa11PNXqjzbnZv7qoxWgyCBl53f3V3Q%3D; H_PS_PSSID=60277_61027_61668_62325_62336_62484_62862_62881_62892_62909_62918_62926_62922_62969_62980_63018; BA_HECTOR=2kak81a1000k0104212h0k202lica71k06pas22; ppfuid=FOCoIC3q5fKa8fgJnwzbE0LGziLN3VHbX8wfShDP6RCsfXQp/69CStRUAcn/QmhIlFDxPrAc/s5tJmCocrihdwitHd04Lvs3Nfz26Zt2holplnIKVacidp8Sue4dMTyfg65BJnOFhn1HthtSiwtygiD7piS4vjG/W9dLb1VAdqNvjLowygVbK9xeY8tvcT1iO0V6uxgO+hV7+7wZFfXG0MSpuMmh7GsZ4C7fF/kTgmuSl/cvKeI8iFojVmpCSZIOQWHcgOTFtj2iFZEfLzQuHAryawfUMAYBdEdQcTqAopI1v2iwj13daM+9aWJ5GJCQu/SUbF5jV5AUyz/jBiIgKVObaDCHgWJZH3ZrTGYHmi7XJB9z3y2o8Kqxep5XBCsu9T7kB7PjMcMtI00HuRpKlnrzoVy1GoWNOpkE9RTIMk8CfdmhxR0fyy9voHR0WBJdnvNXIEW2pwj4BXINSNFrPG7RuJdGqtujDdyt/QfvZygFMb7+JFWxNGoA0JNiv6hCb0gkXpkEpISi6tVHh+hsQifjACGGz0MbLI9AAutvQNmLovQE8DrrUkOPSWZkiBwIUvxonSGS2lgiNZBxgK/Nad6P3sfvyvYhyXNwxm6SzH+Oja1l6cy9uoP7y446ILa1CLEOaV1jDkGoksNhRtn7B1VPovN1TRU04qLrmECuDGMBVR4vlhy8DqZQ1/LUEQ9mjyqP/SnZsRdyLAjuA3ESTcrCSmS6iWcmxBDT8gjuTbf5rG4+h0gsZ2eMGgzIHtuS63IIYbLzQr/C82P9eP5mk0UGJhEbJZ5VFELwdB1Zqsw7E1P/UFtgEbnGJS8xk8zf8YClTpPkuiWM0gZm41VCO+dj8pAfyVHqnsedsJI6TBGH4FEgozZBVnNPfwZCiunebE0X1izHosE1Jw73cEkMH/+rcAUu2n5CREV98SkmXm9t0o6FxUulvcKib1eV1Q5XHcDRvDnFVc7QwGQcn2f8yY5wb2pHyEgg2wrfB6CXhXr6cdu72/IBohb5iIJuK4OQxFEvozgHKDtTDKxnqr+9qBjv5ii+uLg9FdQTz76laHhgWa2XYnL0I/yMaYOB1fXv8cSTQyUvg5bG6rt5+COubpDRly8hJJQuMhC7lnfy1nB/byDVtojV8VzprVRC2O+E8cSTQyUvg5bG6rt5+COubomTY4K0wDrt8OFFV508V7i9BTP7hct8v25t214g385XJlf9dI0aUTGtVnNNQzVUXZbqyhFnB/aNBvyoMXs7d3ed0sIeyq9R1gs4TMyBREN1+COzqWiD/J/i86HI7d4aVw==; Hm_lvt_7a3960b6f067eb0085b7f96ff5e660b0=1745053477; HMACCOUNT=772393591CE09A7D; Hm_lvt_182d6d59474cf78db37e0b2248640ea5=1745053495; BDUSS=nMzQn50T1M5SzJrNnYyflpCM0lkc2kxQ01GfkVkRzRzLWdITngxQVV1dTZIU3RvRVFBQUFBJCQAAAAAAAAAAAEAAAA818c4bHVfb25lXwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALqQA2i6kANoe; STOKEN=a34466ded40f3e1dc2d8e99178b63802607a430cb517309266f03f244e296c82; BDUSS_BFESS=nMzQn50T1M5SzJrNnYyflpCM0lkc2kxQ01GfkVkRzRzLWdITngxQVV1dTZIU3RvRVFBQUFBJCQAAAAAAAAAAAEAAAA818c4bHVfb25lXwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALqQA2i6kANoe; __bid_n=19352fd4f470144254dc0e; Hm_lvt_d5bdc9eee733100f7b952fc44f7e53e4=1745072393; Hm_lpvt_d5bdc9eee733100f7b952fc44f7e53e4=1745073028; Hm_lpvt_7a3960b6f067eb0085b7f96ff5e660b0=1745073719; newlogin=1; PANPSC=2731669165473920844%3AAuI6D6iGxsvAzjfr83OmM1cS2d9ns3O51%2BDh3FHgEfKMlYyryDI8oipPymoB8yIZOD8tuTtuXwJrNmFDBosdkKBa6u%2FIOLHTQjQ1mFHTd8V1tt%2Bk9Cane%2BomA%2FKeZTApdS8c7ndIzLGcCNpWJnWVTjB9EpYb0FOrEbLg5Tzzs5HGdAKH9wtEFl9l5VLCkYtGkty6noED74XrbkBUnMiFfw%3D%3D; ndut_fmt=DB7C97BCA1C624217F25882E01CB69C0D7C9220220806917C08FB7F894C18308; Hm_lpvt_182d6d59474cf78db37e0b2248640ea5=1745074179; ab_sr=1.0.1_ZTA4ZTUyM2Q1MjE3ZjZmNWI3M2RjMzU2NzI0NmMxMjBkNmQ3OTNhZGQzMWNkMWEwZmU3NDJlNzYyOTJjZjI2NGVhOTA0NDA3OTY3YzQ0MDQ1NmZlZDcxZjM2MjVkNmRjZmQ5Y2M4MGZjYzI0ZWFjNDI0MzhkMmQyZjdkYWQ3NGZiNjY1ZTUxY2I1Y2I4ODQwNDI2ZjkzNmY0Y2MwNzIxNzM3NmEyMzhkYTExN2U2OTdhM2RlZGI5NDM4MWM1ODFi' \
+  -H 'Origin: https://pan.baidu.com' \
+  -H 'Referer: https://pan.baidu.com/disk/main' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-origin' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36' \
+  -H 'X-Requested-With: XMLHttpRequest' \
+  -H 'sec-ch-ua: "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  --data-raw 'filelist=%5B%7B%22id%22%3A552648500637155%2C%22path%22%3A%22%2F%E6%88%91%E7%9A%84%E8%B5%84%E6%BA%90%2F20250404006-%E8%B5%B5%E6%99%93%E8%B7%AF4(1).5%2F%E5%85%A8%E9%83%A8%E5%BA%95%E7%89%87%2F602A2185.JPG%22%2C%22newname%22%3A%22602A2185.JPG.txt%22%7D%5D'
+
+
+# 列出指定目录的数据
+curl 'https://pan.baidu.com/api/list?clienttype=0&app_id=250528&web=1&dp-logid=41248100913334730047&order=time&desc=1&dir=%2F%E6%88%91%E7%9A%84%E8%B5%84%E6%BA%90%2F20250404006-%E8%B5%B5%E6%99%93%E8%B7%AF4.5-sucess&num=100&page=1' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Accept-Language: zh-CN,zh;q=0.9' \
+  -H 'Connection: keep-alive' \
+  -b 'BIDUPSID=7263DD0A66CF2A25195A2AEEC40958B5; PSTM=1731895720; BAIDUID=5CEBF22A9BA772FD3B62445193CBD5EE:SL=0:NR=10:FG=1; BAIDUID_BFESS=5CEBF22A9BA772FD3B62445193CBD5EE:SL=0:NR=10:FG=1; PANWEB=1; MCITY=-131%3A; ZFY=Cmr1V:BtJZv:AHpDn69LB0jU20bxF3ZJzUweX6jDUFshY:C; PSINO=1; delPer=0; H_WISE_SIDS=60277_61027_61668_62325_62336_62484_62862_62881_62892_62909_62918_62926_62922_62969_62980; csrfToken=FQvcHI1oNdQuDlD8vN3TS1kG; BDCLND=PatJbJNk2ohXUa11PNXqjzbnZv7qoxWgyCBl53f3V3Q%3D; H_PS_PSSID=60277_61027_61668_62325_62336_62484_62862_62881_62892_62909_62918_62926_62922_62969_62980_63018; BA_HECTOR=2kak81a1000k0104212h0k202lica71k06pas22; ppfuid=FOCoIC3q5fKa8fgJnwzbE0LGziLN3VHbX8wfShDP6RCsfXQp/69CStRUAcn/QmhIlFDxPrAc/s5tJmCocrihdwitHd04Lvs3Nfz26Zt2holplnIKVacidp8Sue4dMTyfg65BJnOFhn1HthtSiwtygiD7piS4vjG/W9dLb1VAdqNvjLowygVbK9xeY8tvcT1iO0V6uxgO+hV7+7wZFfXG0MSpuMmh7GsZ4C7fF/kTgmuSl/cvKeI8iFojVmpCSZIOQWHcgOTFtj2iFZEfLzQuHAryawfUMAYBdEdQcTqAopI1v2iwj13daM+9aWJ5GJCQu/SUbF5jV5AUyz/jBiIgKVObaDCHgWJZH3ZrTGYHmi7XJB9z3y2o8Kqxep5XBCsu9T7kB7PjMcMtI00HuRpKlnrzoVy1GoWNOpkE9RTIMk8CfdmhxR0fyy9voHR0WBJdnvNXIEW2pwj4BXINSNFrPG7RuJdGqtujDdyt/QfvZygFMb7+JFWxNGoA0JNiv6hCb0gkXpkEpISi6tVHh+hsQifjACGGz0MbLI9AAutvQNmLovQE8DrrUkOPSWZkiBwIUvxonSGS2lgiNZBxgK/Nad6P3sfvyvYhyXNwxm6SzH+Oja1l6cy9uoP7y446ILa1CLEOaV1jDkGoksNhRtn7B1VPovN1TRU04qLrmECuDGMBVR4vlhy8DqZQ1/LUEQ9mjyqP/SnZsRdyLAjuA3ESTcrCSmS6iWcmxBDT8gjuTbf5rG4+h0gsZ2eMGgzIHtuS63IIYbLzQr/C82P9eP5mk0UGJhEbJZ5VFELwdB1Zqsw7E1P/UFtgEbnGJS8xk8zf8YClTpPkuiWM0gZm41VCO+dj8pAfyVHqnsedsJI6TBGH4FEgozZBVnNPfwZCiunebE0X1izHosE1Jw73cEkMH/+rcAUu2n5CREV98SkmXm9t0o6FxUulvcKib1eV1Q5XHcDRvDnFVc7QwGQcn2f8yY5wb2pHyEgg2wrfB6CXhXr6cdu72/IBohb5iIJuK4OQxFEvozgHKDtTDKxnqr+9qBjv5ii+uLg9FdQTz76laHhgWa2XYnL0I/yMaYOB1fXv8cSTQyUvg5bG6rt5+COubpDRly8hJJQuMhC7lnfy1nB/byDVtojV8VzprVRC2O+E8cSTQyUvg5bG6rt5+COubomTY4K0wDrt8OFFV508V7i9BTP7hct8v25t214g385XJlf9dI0aUTGtVnNNQzVUXZbqyhFnB/aNBvyoMXs7d3ed0sIeyq9R1gs4TMyBREN1+COzqWiD/J/i86HI7d4aVw==; Hm_lvt_7a3960b6f067eb0085b7f96ff5e660b0=1745053477; HMACCOUNT=772393591CE09A7D; Hm_lvt_182d6d59474cf78db37e0b2248640ea5=1745053495; BDUSS=nMzQn50T1M5SzJrNnYyflpCM0lkc2kxQ01GfkVkRzRzLWdITngxQVV1dTZIU3RvRVFBQUFBJCQAAAAAAAAAAAEAAAA818c4bHVfb25lXwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALqQA2i6kANoe; STOKEN=a34466ded40f3e1dc2d8e99178b63802607a430cb517309266f03f244e296c82; BDUSS_BFESS=nMzQn50T1M5SzJrNnYyflpCM0lkc2kxQ01GfkVkRzRzLWdITngxQVV1dTZIU3RvRVFBQUFBJCQAAAAAAAAAAAEAAAA818c4bHVfb25lXwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALqQA2i6kANoe; __bid_n=19352fd4f470144254dc0e; Hm_lvt_d5bdc9eee733100f7b952fc44f7e53e4=1745072393; Hm_lpvt_d5bdc9eee733100f7b952fc44f7e53e4=1745073028; newlogin=1; Hm_lpvt_7a3960b6f067eb0085b7f96ff5e660b0=1745075320; PANPSC=9977123877585039215%3AAuI6D6iGxssziwcUblW2mlcS2d9ns3O51%2BDh3FHgEfKMlYyryDI8oipPymoB8yIZOD8tuTtuXwJrNmFDBosdkKBa6u%2FIOLHTQjQ1mFHTd8V1tt%2Bk9Cane%2BomA%2FKeZTApdS8c7ndIzLGcCNpWJnWVTjB9EpYb0FOrEbLg5Tzzs5HGdAKH9wtEFl9l5VLCkYtGkty6noED74XrbkBUnMiFfw%3D%3D; Hm_lpvt_182d6d59474cf78db37e0b2248640ea5=1745075546; ndut_fmt=27EF5B2107DCD797072F34E27B19362E7AECDC5BF796B5B7AEE78BA5EF991F08; ab_sr=1.0.1_ZWM4Y2EwODI4NWViZGFhNTk3MzUyM2Q4YWQ4ZDk5NzEwY2I1MmRkYzBhMjNkZGUzZDY3YTM5MTQzMDAyZGMwNTdjY2VlMjI1Y2EwOWE4YjM0OWMxM2M0MWI3NmU3MDU4YzRhOWE2YThjYmNhNmU3OGU4MjAwMjljM2ViNjAwN2ZkZmExN2Q1N2Y3ZDg1NDA2Yzk3NTRjZWJiNmY4ODFhMzY0M2I2MDMzNDYwZDEzOTZiY2IxNjI5MzkzYjA3Mzcz' \
+  -H 'Referer: https://pan.baidu.com/disk/main?from=homeSave' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-origin' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36' \
+  -H 'X-Requested-With: XMLHttpRequest' \
+  -H 'sec-ch-ua: "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"'
+
+响应：
+{
+    "errno": 0,
+    "guid_info": "",
+    "list": [
+        {
+            "tkbind_id": 0,
+            "server_filename": "全部底片",
+            "category": 6,
+            "unlist": 0,
+            "isdir": 1,
+            "dir_empty": 1,
+            "wpfile": 0,
+            "local_mtime": 1745033873,
+            "share": 0,
+            "pl": 1,
+            "local_ctime": 1745033873,
+            "empty": 0,
+            "is_scene": 0,
+            "extent_int2": 0,
+            "server_ctime": 1745033873,
+            "extent_tinyint7": 0,
+            "owner_id": 1031922648,
+            "size": 0,
+            "extent_int8": 0,
+            "owner_type": 1,
+            "path": "/我的资源/20250404006-赵晓路4.5-sucess/全部底片",
+            "fs_id": 377455216334869,
+            "from_type": 0,
+            "server_atime": 0,
+            "server_mtime": 1745075539,
+            "oper_id": 3611062808,
+            "real_category": ""
+        },
+        {
+            "tkbind_id": 0,
+            "server_filename": "20250404006-赵晓路4.5",
+            "category": 6,
+            "unlist": 0,
+            "isdir": 1,
+            "dir_empty": 1,
+            "wpfile": 0,
+            "local_mtime": 1745033839,
+            "share": 0,
+            "pl": 1,
+            "local_ctime": 1745033839,
+            "empty": 0,
+            "is_scene": 0,
+            "extent_int2": 0,
+            "server_ctime": 1745033839,
+            "extent_tinyint7": 0,
+            "owner_id": 1031922648,
+            "size": 0,
+            "extent_int8": 0,
+            "owner_type": 1,
+            "path": "/我的资源/20250404006-赵晓路4.5-sucess/20250404006-赵晓路4.5",
+            "fs_id": 327379348294178,
+            "from_type": 0,
+            "server_atime": 0,
+            "server_mtime": 1745075367,
+            "oper_id": 3611062808,
+            "real_category": ""
+        }
+    ],
+    "request_id": 221435271895990050,
+    "guid": 0
+}
+
+此时有两个目录
